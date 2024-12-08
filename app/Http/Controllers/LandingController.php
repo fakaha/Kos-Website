@@ -14,15 +14,15 @@ class LandingController extends Controller
         return view('landing.index');
     }
 
-    public function details(){
+    public function details()
+    {
         return view('landing.details');
     }
 
-    public function categories(){
+    public function categories() {}
 
-    }
-
-    public function testimonials(){
+    public function testimonials()
+    {
         return view('landing.testimonials');
         // INI mereferensikan ke halaman file landing.tesimonials
     }

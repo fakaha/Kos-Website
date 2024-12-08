@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
+
 <body>
 
-<section class="house-details pb-5">
+    <section class="house-details pb-5">
         <div class="container">
             <div class="row align-items-center mb-30">
                 <div class="col-lg-6">
@@ -168,6 +170,7 @@
             </div>
         </div>
     </section>
-    
+
 </body>
+
 </html>
