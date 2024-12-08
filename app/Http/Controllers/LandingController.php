@@ -15,7 +15,7 @@ class LandingController extends Controller
     }
 
     public function details(){
-        
+        return view('landing.details');
     }
 
     public function categories(){
