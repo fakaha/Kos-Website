@@ -11,14 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+        @stack('before-styles')
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        @stack('after-styles')
 </head>
 
 <body>
 
     @yield('content')
 
+    @stack('before-scripts')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    @stack('after-scripts')
 </body>
 
 </html>

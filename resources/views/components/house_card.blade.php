@@ -1,10 +1,10 @@
 <div class="col-lg-3">
     <div class="item">
-        <a href="">
+        <a href="{{ route('landing.details', 'coral-pik-seven') }}">
             <img src="{{ asset($cover) }}" alt="" class="img-fluid">
         </a>
         <div class="info">
-            <a href="">
+            <a href="{{ route('landing.details', 'coral-pik-seven') }}">
                 <h3 class="small-header mb-2">
                     {{$title}}
                 </h3>
