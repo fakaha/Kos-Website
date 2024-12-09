@@ -1,8 +1,22 @@
-    @extends('layouts.front')
+<!DOCTYPE html>
+<html lang="en">
 
-    @section('title', 'Explore Kos Kosan')
-    @section('content')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+</head>
+
+<body>
     @include('components.navbar')
+
     <section class="header mb-70">
         <div class="container">
             <div class="row align-items-center">
@@ -80,10 +94,13 @@
                 @slot('title', 'Saung Sunda')
                 @slot('price', '123')
                 @slot('location', 'Jogja')
-                @slot('review', '4.5')
                 @endcomponent
             </div>
 
         </div>
     </section>
-    @endsection
+
+
+</body>
+
+</html>

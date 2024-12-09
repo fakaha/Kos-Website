@@ -14,9 +14,14 @@ class LandingController extends Controller
         return view('landing.index');
     }
 
-    public function details()
+    public function details($slug)
     {
-        return view('landing.details');
+        
+        return view('landing.details', compact('slug'));
+    }
+
+    public function wishlist() {
+        return view('landing.wishlist');
     }
 
     public function categories() {}

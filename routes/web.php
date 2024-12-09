@@ -16,6 +16,6 @@ use App\Http\Controllers\LandingController;
 
 Route::get('testimonials', [LandingController::class, 'testimonials'])->name('landing.testimonials');
 // get routesnya lalu landingcontroller dilanjut function yang dipakai dan kita kasih nama
-
-Route::get('details', [LandingController::class, 'details'])->name('landing.details');
+Route::get('wishlist', [LandingController::class, 'wishlist'])->name('landing.wishlist');
+Route::get('details/{slug}', [LandingController::class, 'details'])->name('landing.details');
 Route::resource('/', LandingController::class);
