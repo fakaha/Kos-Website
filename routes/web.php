@@ -15,11 +15,14 @@ use App\Http\Controllers\LandingController;
 |
 */
 
-Route::name('admin.')->prefix('admin')->group(function () {
+Route::name('admin.')->middleware('role')->prefix('admin')->group(function () {
     Route::get('/products', [AdminController::class, 'products'])->name('products');
+    Route::get('/rewards', [AdminController::class, 'rewards'])->withoutMiddleware('role')->name('rewards');
     // gaperlu tulis route admin lagi
     // gaperlu tulis name admin lagi
 });
+
+// Route::get('/admin/products', [AdminController::class, 'products'])->middleware('role')->name('admin.products');
 
 Route::get('testimonials', [LandingController::class, 'testimonials'])->name('landing.testimonials');
 // get routesnya lalu landingcontroller dilanjut function yang dipakai dan kita kasih nama

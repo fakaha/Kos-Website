@@ -19,6 +19,12 @@ class AdminController extends Controller
         return view('admin.products');
     }
 
+    public function rewards()
+    {
+        dd ('halaman rewards');
+        return view('admin.rewards');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
